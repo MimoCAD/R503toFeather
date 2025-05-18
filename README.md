@@ -1,12 +1,17 @@
 # Pinout
-We start by connecting the Grow r503 (Pro) to the RP2040 Pico W with the following pinout.
-![RP2040 Pico W Pinout](https://www.raspberrypi.com/documentation/microcontrollers/images/picow-pinout.svg)
 
-| # | Sensor Wire Color                      | Function |  PIN#  | Pin Name                                      |
-| - |                  :---:                 |   :---:  |  :---: |                :---:                          |
-| 1 | $${\color{red}RED \space Wire}$$       | Power    |   36   | $${\color{red}3V3(OUT)}$$                     |
-| 2 | $${\color{white}WHITE \space Wire}$$   | Ground   |   38   | $${\color{black}GND}$$                        |
-| 3 | $${\color{yellow}YELLOW \space Wire}$$ | TX (Out) |   21   | $${\color{purple}UART0 \space RX (GPIO 17)}$$ |
-| 4 | $${\color{purple}PURPLE \space Wire}$$ | RX (In)  |   22   | $${\color{purple}UART0 \space TX (GPIO 16)}$$ |
-| 5 | $${\color{blue}BLUE \space Wire}$$     | Wakeup   |   24   | $${\color{lightgreen}GPIO 18}$$               |
-| 6 | $${\color{white}WHITE \space Wire}$$   | Touch    |   36   | $${\color{red}3V3(OUT)}$$                     |
+## Adafruit Feather RP2350 HSTX
+![Adafruit Feather RP2350 HSTX Pinout](https://raw.githubusercontent.com/adafruit/Adafruit-Feather-RP2350-PCB/refs/heads/main/Adafruit_Feather_RP2350_prettypins.svg)
+
+## Grow R503 Pro
+![GROW R503 Pro MX1.0-6P Pinout](https://probots.co.in/pub/media/wysiwyg/GROW_R503_-5.jpg)
+
+## Connections
+| # | R503 Pro Wire Color                    | Name   | PIN # | Pin Name               | Notes                            |
+| - |                 :---:                  | :---:  | :---: |          :---:         |               :---:              |
+| 1 | $${\color{red}RED \space Wire}$$       | Power  |   3V3 | $${\color{red}3V3}$$   | 3.3 Volts (Top Left Of Feather). |
+| 2 | $${\color{black}BLACK \space Wire}$$   | GND    |   GRD | $${\color{black}GND}$$ | Ground (Right Under 3.3 Pins).   |
+| 3 | $${\color{yellow}YELLOW \space Wire}$$ | TXD    |    01 | $${\color{green}RX}$$  | TX on R503 <> RX on the Feather. |
+| 4 | $${\color{green}GREEN \space Wire}$$   | RXD    |    00 | $${\color{yellow}TX}$$ | RX on R503 <> TX on the Feather. |
+| 5 | $${\color{blue}BLUE \space Wire}$$     | Wakeup |    02 | $${\color{BLUE}SDA}$$  | Finger Detection (Pulled High).  |
+| 6 | $${\color{white}WHITE \space Wire}$$   | Touch  |   3V3 | $${\color{red}3V3}$$   | 3.3 Volts (Top Left Of Feather). |
