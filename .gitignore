@@ -1,6 +1,12 @@
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
+# Apple files
+.DS_Store
+
+# KiCAD Lock Files
+*.lck
+
 # Temporary files
 *.000
 *.bak
