@@ -1545,6 +1545,10 @@
 		(uuid "c64fed15-df46-4092-923d-58295f92cff9")
 	)
 	(no_connect
+		(at 138.43 130.81)
+		(uuid "cebd21ad-3267-4caa-b31c-764b74d43145")
+	)
+	(no_connect
 		(at 148.59 80.01)
 		(uuid "d9240900-571d-40d7-8476-65396264298d")
 	)
@@ -1626,28 +1630,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 107.95) (xy 104.14 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 255 1)
-		)
-		(uuid "60f99094-be2f-4bef-8fb3-6239d9aeabd9")
-	)
-	(wire
-		(pts
-			(xy 104.14 130.81) (xy 138.43 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 255 1)
-		)
-		(uuid "641af70b-9c59-4c35-94fc-ef99e1541d68")
-	)
-	(wire
-		(pts
 			(xy 153.67 78.74) (xy 163.83 78.74)
 		)
 		(stroke
@@ -1668,14 +1650,14 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 107.95) (xy 109.22 107.95)
+			(xy 109.22 85.09) (xy 109.22 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 0 0 255 1)
 		)
-		(uuid "7720fae8-3a80-4fce-8ea1-3ddd69b29d18")
+		(uuid "890658d7-e3a5-4893-8fa2-84022c1eebc4")
 	)
 	(wire
 		(pts
@@ -1687,17 +1669,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "90fabc6f-327b-4062-8155-0c2aec70d169")
-	)
-	(wire
-		(pts
-			(xy 109.22 85.09) (xy 109.22 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 255 1)
-		)
-		(uuid "a2b881f8-eb63-4419-af07-444756d15233")
 	)
 	(wire
 		(pts
@@ -2560,6 +2531,71 @@
 			(project "R503toFeather"
 				(path "/80f6c95f-f86e-4283-92dd-c1d765ce6a6d"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77e7a8e4-4227-4dd4-9443-e649409fb0db")
+		(property "Reference" "#PWR06"
+			(at 109.22 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf23e18a-ac9e-459a-9194-6988f977c4fd")
+		)
+		(instances
+			(project "R503toFeather"
+				(path "/80f6c95f-f86e-4283-92dd-c1d765ce6a6d"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
